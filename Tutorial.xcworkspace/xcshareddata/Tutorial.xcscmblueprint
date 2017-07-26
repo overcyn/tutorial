@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "551FCF6771CE3BB3E9CC8A3BADEF903FDC0F00E4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "32674988584DF201C37CC515EAB10EC5EC6E2862" : 9223372036854775807,
+    "551FCF6771CE3BB3E9CC8A3BADEF903FDC0F00E4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FDB744DE-F73E-43B8-B11C-34B2CC196C69",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "32674988584DF201C37CC515EAB10EC5EC6E2862" : "..\/..\/gomatcha.io\/matcha",
+    "551FCF6771CE3BB3E9CC8A3BADEF903FDC0F00E4" : "tutorial\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Tutorial",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tutorial.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:gomatcha\/matcha.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "32674988584DF201C37CC515EAB10EC5EC6E2862"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:overcyn\/tutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "551FCF6771CE3BB3E9CC8A3BADEF903FDC0F00E4"
+    }
+  ]
+}

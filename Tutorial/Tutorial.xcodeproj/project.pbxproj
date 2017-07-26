@@ -13,12 +13,12 @@
 		67783C331F1995C3001582F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67783C311F1995C3001582F5 /* Main.storyboard */; };
 		67783C351F1995C3001582F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67783C341F1995C3001582F5 /* Assets.xcassets */; };
 		67783C381F1995C3001582F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67783C361F1995C3001582F5 /* LaunchScreen.storyboard */; };
-		67783C491F19966F001582F5 /* Matcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67783C461F19966F001582F5 /* Matcha.framework */; };
-		67783C4A1F19966F001582F5 /* MatchaBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67783C471F19966F001582F5 /* MatchaBridge.framework */; };
-		67783C4B1F19966F001582F5 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67783C481F19966F001582F5 /* Protobuf.framework */; };
-		67783C4D1F1996A5001582F5 /* Matcha.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67783C461F19966F001582F5 /* Matcha.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		67783C4E1F1996A5001582F5 /* MatchaBridge.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67783C471F19966F001582F5 /* MatchaBridge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		67783C4F1F1996A5001582F5 /* Protobuf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67783C481F19966F001582F5 /* Protobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		679034421F234B7B00E5BC5A /* Matcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790343F1F234B7B00E5BC5A /* Matcha.framework */; };
+		679034431F234B7B00E5BC5A /* MatchaBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679034401F234B7B00E5BC5A /* MatchaBridge.framework */; };
+		679034441F234B7B00E5BC5A /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679034411F234B7B00E5BC5A /* Protobuf.framework */; };
+		679034451F234B8100E5BC5A /* Matcha.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6790343F1F234B7B00E5BC5A /* Matcha.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		679034461F234B8100E5BC5A /* MatchaBridge.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 679034401F234B7B00E5BC5A /* MatchaBridge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		679034471F234B8100E5BC5A /* Protobuf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 679034411F234B7B00E5BC5A /* Protobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +28,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				67783C4D1F1996A5001582F5 /* Matcha.framework in CopyFiles */,
-				67783C4E1F1996A5001582F5 /* MatchaBridge.framework in CopyFiles */,
-				67783C4F1F1996A5001582F5 /* Protobuf.framework in CopyFiles */,
+				679034451F234B8100E5BC5A /* Matcha.framework in CopyFiles */,
+				679034461F234B8100E5BC5A /* MatchaBridge.framework in CopyFiles */,
+				679034471F234B8100E5BC5A /* Protobuf.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,9 +47,9 @@
 		67783C341F1995C3001582F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67783C371F1995C3001582F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67783C391F1995C3001582F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67783C461F19966F001582F5 /* Matcha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Matcha.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Tutorial-auurjnpgofnssngmjnmudzhlyttf/Build/Products/Debug-iphonesimulator/Matcha.framework"; sourceTree = "<group>"; };
-		67783C471F19966F001582F5 /* MatchaBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MatchaBridge.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Tutorial-auurjnpgofnssngmjnmudzhlyttf/Build/Products/Debug-iphonesimulator/MatchaBridge.framework"; sourceTree = "<group>"; };
-		67783C481F19966F001582F5 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Tutorial-auurjnpgofnssngmjnmudzhlyttf/Build/Products/Debug-iphonesimulator/Protobuf.framework"; sourceTree = "<group>"; };
+		6790343F1F234B7B00E5BC5A /* Matcha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Matcha.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Tutorial-auurjnpgofnssngmjnmudzhlyttf/Build/Products/Debug-iphoneos/Matcha.framework"; sourceTree = "<group>"; };
+		679034401F234B7B00E5BC5A /* MatchaBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MatchaBridge.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Tutorial-auurjnpgofnssngmjnmudzhlyttf/Build/Products/Debug-iphoneos/MatchaBridge.framework"; sourceTree = "<group>"; };
+		679034411F234B7B00E5BC5A /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Tutorial-auurjnpgofnssngmjnmudzhlyttf/Build/Products/Debug-iphoneos/Protobuf.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67783C491F19966F001582F5 /* Matcha.framework in Frameworks */,
-				67783C4A1F19966F001582F5 /* MatchaBridge.framework in Frameworks */,
-				67783C4B1F19966F001582F5 /* Protobuf.framework in Frameworks */,
+				679034421F234B7B00E5BC5A /* Matcha.framework in Frameworks */,
+				679034431F234B7B00E5BC5A /* MatchaBridge.framework in Frameworks */,
+				679034441F234B7B00E5BC5A /* Protobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +110,9 @@
 		67783C451F19966F001582F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67783C461F19966F001582F5 /* Matcha.framework */,
-				67783C471F19966F001582F5 /* MatchaBridge.framework */,
-				67783C481F19966F001582F5 /* Protobuf.framework */,
+				6790343F1F234B7B00E5BC5A /* Matcha.framework */,
+				679034401F234B7B00E5BC5A /* MatchaBridge.framework */,
+				679034411F234B7B00E5BC5A /* Protobuf.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

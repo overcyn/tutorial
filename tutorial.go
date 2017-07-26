@@ -14,7 +14,7 @@ import (
 type TutorialView struct {
 	// All components must implement the view.View interface. A basic implementation
 	// is provided by view.Embed.
-	*view.Embed
+	view.Embed
 }
 
 // This is our view's initializer.
@@ -31,8 +31,8 @@ func New(ctx *view.Context, key string) *TutorialView {
 
 // Similar to React's render function. Views specify their properties and
 // children in Build().
-func (v *TutorialView) Build(ctx *view.Context) *view.Model {
-	l := constraint.New()
+func (v *TutorialView) Build(ctx *view.Context) view.Model {
+	l := &constraint.Layouter{}
 
 	// Get the textview for the given key (hellotext), either initializing it or fetching
 	// the previous one.
@@ -54,7 +54,7 @@ func (v *TutorialView) Build(ctx *view.Context) *view.Model {
 	})
 
 	// Returns the view's children, layout, and styling.
-	return &view.Model{
+	return view.Model{
 		Children: []view.View{textv},
 		Layouter: l,
 		Painter:  &paint.Style{BackgroundColor: colornames.Lightgray},
@@ -65,10 +65,7 @@ func init() {
 	// Registers a function with the objc bridge. This function returns
 	// a view.Root, which can be display in MatchaViewController.
 	bridge.RegisterFunc("github.com/overcyn/tutorial New", func() *view.Root {
-		return view.NewRoot(view.ScreenFunc(func(ctx *view.Context) view.View {
-
-			// Call the TutorialView initializer.
-			return New(ctx, "")
-		}))
+		// Call the TutorialView initializer.
+		return view.NewRoot(New(nil, ""))
 	})
 }
