@@ -1,16 +1,25 @@
 package tutorial
 
 import (
-	"image/color"
-
 	"golang.org/x/image/colornames"
-	"gomatcha.io/bridge"
+	"gomatcha.io/matcha/bridge"
 	"gomatcha.io/matcha/layout/constraint"
 	"gomatcha.io/matcha/paint"
 	"gomatcha.io/matcha/text"
 	"gomatcha.io/matcha/view"
-	"gomatcha.io/matcha/view/textview"
+	"image/color"
 )
+
+func init() {
+	// Registers a function with the objc bridge. This function returns
+	// a view.View, which can be displayed in a MatchaViewController.
+	bridge.RegisterFunc("github.com/overcyn/tutorial New", func() view.View {
+		// Call the TutorialView initializer.
+		v := NewTutorialView()
+		v.TextColor = colornames.Red
+		return v
+	})
+}
 
 // Here is our root view.
 type TutorialView struct {
@@ -27,19 +36,14 @@ func NewTutorialView() *TutorialView {
 
 // Similar to React's render function. Views specify their properties and
 // children in Build().
-func (v *TutorialView) Build(ctx *view.Context) view.Model {
+func (v *TutorialView) Build(ctx view.Context) view.Model {
 	l := &constraint.Layouter{}
 
-	// Get the textview for the given key (hellotext), either initializing it or fetching
-	// the previous one.
-	child := textview.New()
+	// Create a new textview.
+	child := view.NewTextView()
 	child.String = "Hello World"
 	child.Style.SetTextColor(v.TextColor)
-	child.Style.SetFont(text.Font{
-		Family: "Helvetica Neue",
-		Face:   "Bold",
-		Size:   50,
-	})
+	child.Style.SetFont(text.DefaultBoldFont(50))
 	child.PaintStyle = &paint.Style{BackgroundColor: colornames.Blue}
 
 	// Layout is primarily done using constraints. More info can be
@@ -55,15 +59,4 @@ func (v *TutorialView) Build(ctx *view.Context) view.Model {
 		Layouter: l,
 		Painter:  &paint.Style{BackgroundColor: colornames.Lightgray},
 	}
-}
-
-func init() {
-	// Registers a function with the objc bridge. This function returns
-	// a view.Root, which can be displayed in a MatchaViewController.
-	bridge.RegisterFunc("github.com/overcyn/tutorial New", func() *view.Root {
-		// Call the TutorialView initializer.
-		v := NewTutorialView()
-		v.TextColor = colornames.Red
-		return view.NewRoot(v)
-	})
 }
